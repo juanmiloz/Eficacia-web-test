@@ -1,0 +1,66 @@
+.base-card {
+    background-color: #F4F7F9;
+    border-radius: 8px;
+    padding: 20px;
+    width: 678px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    font-family: 'Solomon Sans Normal', sans-serif;
+    gap: 16px;
+
+    h4{
+        font-size: 24px;
+        font-weight: 700;
+        color: #0041A3;
+        padding: 0;
+        margin: 0;
+    }
+
+    .description-head {
+        font-size: 14px;
+        font-weight: 400;
+        color: #9EACB3
+    }
+
+    p {
+        color: #70777B;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .slots-input {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .form-base-card {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .check-section {
+        font-weight: 700;
+        font-size: 14px;
+        color: #0041A3;
+    }
+
+    .checkbox-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .checkbox-description{
+        font-size: 12px;
+        font-weight: 400;
+        color: #404040;
+    }
+
+    .buttons{
+        gap: 10px;
+    }
+
+}

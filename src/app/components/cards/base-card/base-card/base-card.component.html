@@ -1,0 +1,34 @@
+<div class="base-card">
+    <div>
+        <h4 class="base-card-header">Crear una medición</h4>
+        <span class="description-head">Permita de nuevas mediciones de participación</span>
+        <p>
+            Es el proceso de evaluar cuán involucradas están las personas en una actividad, usando indicadores como
+            asistencia, interacciones o aportes. Se recogen datos, se analizan y se obtiene un resultado que ayuda a
+            mejorar
+            el compromiso y la estrategia.
+        </p>
+    </div>
+    <form class="form-base-card">
+        <div class="slots-input">
+            <app-input label="Nombre de la medición" placeholder="Inserte el nombre" [showRequired]="true"
+                type="textField" state="enable" [(value)]="nameMeasurement" />
+            <app-input label="Descripción de la medición" placeholder="Inserte comentarios u observaciones"
+                [showRequired]="true" type="textField" state="enable" [(value)]="descriptionMeasurement" />
+            <app-dropdown-menu [options]="['Activo', 'Inactivo']" textField="Estado" />
+        </div>
+        <div class="check-section">
+            Configuración especial
+        </div>
+        <div class="checkbox-text">
+            <storybook-checkbox [checked]=false />
+            <span class="checkbox-description">Implementación obligatoria</span>
+        </div>
+        <div class="buttons">
+            <app-button label="Crear medición" color="primary" size="medium" styles="filled" state="active"
+                (onClick)="createMeasurement()" [width]="'100%'" />
+            <app-button label="Cancelar creación" color="error" size="medium" styles="text" state="active"
+                (onClick)="cancelCreationMeasurement()" [width]="'100%'" class="cancel-btn" />
+        </div>
+    </form>
+</div>
